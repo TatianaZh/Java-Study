@@ -4,7 +4,6 @@ import java.util.Map;
 
 public class CountMapImpl<E> implements CountMap<E> {
 
-
     private Map<E,Integer> map;
     private Map<E,Integer> source;
 
@@ -23,7 +22,6 @@ public class CountMapImpl<E> implements CountMap<E> {
         } else {
             map.put(e, 1);
         }
-
     }
 
     @Override
@@ -74,6 +72,5 @@ public class CountMapImpl<E> implements CountMap<E> {
     // в destination
     public void toMap(Map destination) {
         destination.putAll(map);
-
     }
 }
